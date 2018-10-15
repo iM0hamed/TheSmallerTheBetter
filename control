@@ -1,0 +1,13 @@
+Package: com.pixelomer.thesmallerthebetter
+Name: TheSmallerTheBetter
+Depends: mobilesubstrate, applist, preferenceloader
+Conflicts: com.pixelomer.c0vercydia
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: Disable large titles in apps
+  This tweak disables large titles for the apps selected from the Preferences bundle.
+  By default, the large titles are disabled in every app excluding the apps selected in the Settings app. If the mode switch is switched on, the tweak disables large titles only in selected apps.
+  Configure the preferences in the Settings app.
+Maintainer: PixelOmer
+Author: PixelOmer
+Section: Tweaks

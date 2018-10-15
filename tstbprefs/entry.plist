@@ -1,0 +1,8 @@
+entry = {
+	bundle = tstbprefs;
+	cell = PSLinkCell;
+	detail = PBRootListController;
+	icon = "icon.png";
+	isController = 1;
+	label = "TheSmallerTheBetter";
+};

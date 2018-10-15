@@ -1,0 +1,17 @@
+ARCHS = arm64
+TARGET = iphone:10.3:11.0
+THEOS_DEVICE_IP = 127.0.0.1
+THEOS_DEVICE_PORT = 2222
+
+include $(THEOS)/makefiles/common.mk
+
+TWEAK_NAME = TheSmallerTheBetter
+TheSmallerTheBetter_FILES = Tweak.xm
+
+include $(THEOS_MAKE_PATH)/tweak.mk
+
+after-install::
+	install.exec "killall -9 SpringBoard"
+
+SUBPROJECTS += tstbprefs
+include $(THEOS_MAKE_PATH)/aggregate.mk
